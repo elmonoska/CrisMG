@@ -1,0 +1,60 @@
+:root {
+  
+}
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100dvh;
+  margin: 0;
+  display: grid;
+  place-content: center;
+}
+/* Multimedia se adapta al tamaño del contenedor */
+img, audio, video, iframe, canvas, svg, picture {
+  max-width: 100%;
+  height: auto;
+}
+/* Balanceo de los títulos y los párrafos */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+
+/* Custom styles */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+.principal {
+    width: clamp(300px, 80vw, 80vw);
+    height: auto;
+    margin-inline: auto;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 0.5rem;
+    #love {
+      background-color: violet;
+      border: 0;
+      color: white;
+      padding: 1rem;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+    #magicCat {
+      display: none;
+    }
+}
