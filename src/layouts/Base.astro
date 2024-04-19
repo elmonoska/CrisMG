@@ -1,0 +1,35 @@
+---
+const {title, description} = Astro.props;
+
+import "../styles/custom.css";
+---
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <!-- Global metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/icons/cat-5-svgrepo-com.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/icons/cat-5-svgrepo-com.svg">
+    <!-- Hexadecimal -->
+    <meta name="theme-color" content="">
+    <!-- Only when i know specifically the direction where this page will be -->
+    <link rel="canonical" href="">
+    <link rel="manifest" href="">
+    <!-- Primary meta tags -->
+    <!-- Between 0 and 65 -->
+    <title>{title}</title>
+    <!-- No more than 65 characters -->
+    <meta name="description" content={description}>
+    <!-- Open graph -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+  </head>
+  <body class="font-poppins-r">
+
+    <slot/>
+
+  </body>
+</html>

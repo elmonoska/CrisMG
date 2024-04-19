@@ -1,0 +1,19 @@
+---
+import Base from "../../layouts/Base.astro";
+import Greeting from "../../components/notitas/Greeting.astro";
+
+---
+<Base title="Notitas | CrisMG">
+  <main class="container my-4 flex flex-col gap-4">
+    <a href="/" class="block text-end text-blue-400 hover:text-blue-800 hover:underline transition-colors">Regresar a la página principal.</a>
+    
+    <Greeting/>
+		
+		<ul class="flex flex-col gap-1 text-blue-400 *:hover:*:text-blue-800 *:hover:*:underline transition-colors">
+			<li><a href="/notitas/dont-be-sad/">No estés triste</a></li>
+			<li><a href="/notitas/21-03/">21-03</a></li>
+			<li><a href="/notitas/best-makeuper/">Makeuper</a></li>
+			
+		</ul>
+  </main>
+</Base>

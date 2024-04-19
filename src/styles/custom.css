@@ -1,0 +1,19 @@
+/* ********** FONTS ********** */
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/Poppins-Regular.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+/* ********** ********* ********** */
+.container-center {
+  display: grid;
+  place-content: center;
+  height: 100dvh;
+}
+.container {
+    width: clamp(300px, 80vw, 80%);
+    height: auto;
+    margin-inline: auto;
+}

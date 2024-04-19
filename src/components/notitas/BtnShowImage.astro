@@ -1,0 +1,18 @@
+---
+
+---
+<button id="showImage" class="rounded-xl bg-violet-400 hover:via-violet-800 transition-colors text-violet-50 p-4">Presiona aquí 👀.</button>
+
+<script>
+  const btnShowImage = document.getElementById('showImage');
+  const imageToShow = document.getElementById('imageToShow');
+  
+  btnShowImage.addEventListener('click', () => {
+    if(imageToShow.classList.contains('hidden')) {
+      btnShowImage.textContent = 'Magía ✨.';
+    }else {
+      btnShowImage.textContent = 'Presiona aquí 👀.';
+    }
+    imageToShow.classList.toggle('hidden');
+  })
+</script>

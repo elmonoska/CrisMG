@@ -1,0 +1,18 @@
+---
+const {imageNote, altImageNote, textNote} = Astro.props;
+
+import Greeting from "../../components/notitas/Greeting.astro";
+import BtnShowImage from "../../components/notitas/BtnShowImage.astro";
+
+import { Image } from "astro:assets";
+---
+<main class="container-center">
+  <section class="text-center flex flex-col gap-5">
+    <Greeting/>
+    <section class="hidden" id="imageToShow">
+      <p>{textNote}</p>
+      <Image src={imageNote} alt={altImageNote} class="rounded-md w-[50vw] mx-auto"/>
+    </section>
+    <BtnShowImage/>
+  </section >
+</main>
