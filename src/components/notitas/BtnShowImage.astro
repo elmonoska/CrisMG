@@ -1,7 +1,7 @@
 ---
 
 ---
-<button id="showImage" class="rounded-xl bg-violet-400 hover:via-violet-800 transition-colors text-violet-50 p-4">Presiona aquí 👀.</button>
+<button id="showImage" class="rounded-xl bg-violet-400 hover:via-violet-800 transition-colors text-violet-50 p-4">Presiona aquí 👀</button>
 
 <script>
   const btnShowImage = document.getElementById('showImage');
@@ -9,10 +9,15 @@
   
   btnShowImage.addEventListener('click', () => {
     if(imageToShow.classList.contains('hidden')) {
-      btnShowImage.textContent = 'Magía ✨.';
+      btnShowImage.textContent = 'Magía ✨';
+      imageToShow.classList.remove('hidden');
+      imageToShow.classList.add('flex');
+
     }else {
-      btnShowImage.textContent = 'Presiona aquí 👀.';
+      btnShowImage.textContent = 'Presiona aquí 👀';
+      imageToShow.classList.add('hidden');
+      imageToShow.classList.remove('flex');
     }
-    imageToShow.classList.toggle('hidden');
+    /* imageToShow.classList.toggle('hidden'); */
   })
 </script>

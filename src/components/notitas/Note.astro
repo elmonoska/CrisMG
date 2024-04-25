@@ -7,9 +7,9 @@ import BtnShowImage from "../../components/notitas/BtnShowImage.astro";
 import { Image } from "astro:assets";
 ---
 <main class="container-center">
-  <section class="text-center flex flex-col gap-5">
+  <section class="text-center flex flex-col gap-4 p-16 md:p-4">
     <Greeting/>
-    <section class="hidden" id="imageToShow">
+    <section class="hidden flex-col gap-4" id="imageToShow">
       <p>{textNote}</p>
       <Image src={imageNote} alt={altImageNote} class="rounded-md w-[50vw] md:w-[30vw] mx-auto"/>
     </section>
